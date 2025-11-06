@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 Site Web de l'ANPIR
 
-## Getting Started
+Bienvenue dans le dépôt GitHub du site officiel de l'ANPIR (Association Nigérienne des Professionnels de l'Imagerie Médicale et de la Radiothérapie). Ce projet a pour objectif de créer une plateforme moderne, performante et informative pour l'association.
 
-First, run the development server:
+## 🌟 Technologies Utilisées
+
+Ce projet est construit en utilisant une stack moderne orientée performance et expérience utilisateur :
+
+| Catégorie              | Technologie                                                | Description                                                                    |
+| :--------------------- | :--------------------------------------------------------- | :----------------------------------------------------------------------------- |
+| **Framework**          | **Next.js** (avec App Router)                              | Framework React pour la performance (SSR/SSG/ISR) et le routing.               |
+| **Langage**            | **TypeScript**                                             | Ajoute la robustesse et la scalabilité au code.                                |
+| **Styling**            | **Tailwind CSS**                                           | Framework CSS utilitaire pour un développement rapide et un design responsive. |
+| **Authentification**   | **NextAuth.js** (ou équivalent)                            | Gestion sécurisée de l'authentification des membres.                           |
+| **Gestion de Contenu** | **[Nom du CMS Headless]** (ex: Strapi, Sanity, Contentful) | CMS sans tête pour la gestion des actualités, événements et ressources.        |
+| **Hébergement**        | **Vercel** (Recommandé)                                    | Plateforme optimisée pour le déploiement de Next.js.                           |
+
+## 🚀 Fonctionnalités Clés
+
+- **Pages Statiques Performantes** (SSG) : Accueil, À Propos, Contact.
+- **Actualités et Événements** (ISR) : Mise à jour rapide et automatique du contenu.
+- **Système d'Adhésion en Ligne** : Formulaires de candidature et de renouvellement.
+- **Espace Membre Sécurisé** : Accès protégé aux ressources documentaires (PV de réunions, publications, supports de formation).
+- **Design Responsive** : Site entièrement accessible sur mobile, tablette et ordinateur.
+
+## 💻 Configuration Locale
+
+Suivez ces étapes pour démarrer le projet sur votre machine locale.
+
+### Prérequis
+
+Assurez-vous d'avoir installé les logiciels suivants :
+
+- Node.js (version 18 ou supérieure)
+- npm ou yarn (gestionnaire de paquets)
+- Git
+
+### Installation
+
+1.  **Cloner le dépôt :**
+
+    ```bash
+    git clone [URL_DU_DÉPÔT_GIT]
+    cd anpir-website
+    ```
+
+2.  **Installer les dépendances :**
+
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
+
+3.  **Configurer les variables d'environnement :**
+    Créez un fichier `.env.local` à la racine du projet et ajoutez les clés API et les variables de connexion nécessaires (ex: CMS, Base de Données, NextAuth secrets).
+
+    Exemple de `.env.local`:
+
+    ```
+    # NextAuth
+    NEXTAUTH_SECRET="[VOTRE_SECRET_COMPLEXE]"
+    NEXTAUTH_URL="http://localhost:3000"
+
+    # API CMS Headless
+    CMS_API_URL="[URL_DE_VOTRE_API_CMS]"
+    CMS_API_KEY="[VOTRE_CLE_API]"
+    ```
+
+### Lancement du Serveur de Développement
+
+Lancez l'application en mode développement :
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+L'application sera accessible à l'adresse : **`http://localhost:3000`**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✅ Scripts Disponibles
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Dans le répertoire du projet, vous pouvez exécuter :
 
-## Learn More
+| Script               | Description                                                      |
+| :------------------- | :--------------------------------------------------------------- |
+| `npm run dev`        | Lance l'application en mode développement avec Hot-Reload.       |
+| `npm run build`      | Construit l'application pour la production (génération SSG/ISR). |
+| `npm run start`      | Lance le serveur de production après la construction.            |
+| `npm run lint`       | Exécute ESLint pour détecter les problèmes de code.              |
+| `npm run type-check` | Vérifie la conformité TypeScript du projet.                      |
 
-To learn more about Next.js, take a look at the following resources:
+## ⚙️ Déploiement
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Le déploiement continu (CI/CD) est géré via **Vercel** (recommandé pour les applications Next.js).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  **Connexion Git :** Assurez-vous que le dépôt est connecté à Vercel.
+2.  **Variables d'Environnement :** Configurez les variables de production (similaires à `.env.local`) directement sur le tableau de bord Vercel.
+3.  **Déploiement Automatique :** Toute poussée (push) vers la branche `main` (ou `production`) déclenchera un nouveau _build_ et un déploiement automatique du site.
 
-## Deploy on Vercel
+## 🤝 Contribution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Toute contribution est la bienvenue \! Pour proposer des améliorations :
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.  Forkez ce dépôt.
+2.  Créez une nouvelle branche pour votre fonctionnalité (`git checkout -b feature/nouvelle-fonctionnalite`).
+3.  Effectuez vos changements et commitez-les (`git commit -m 'feat: ajoute la fonctionnalité X'`).
+4.  Poussez la branche sur votre fork (`git push origin feature/nouvelle-fonctionnalite`).
+5.  Ouvrez une **Pull Request** vers la branche `main` de ce dépôt.
+
+---
