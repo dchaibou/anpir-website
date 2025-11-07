@@ -14,12 +14,9 @@ export async function generateStaticParams() {
 }
 
 // Fonction pour générer des métadonnées dynamiques
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  const article = await getArticleBySlug(params.slug);
+export async function generateMetadata({ params }): Promise<Metadata> {
+  const { slug } = await params;
+  const article = await getArticleBySlug(slug);
 
   if (!article) {
     return {
@@ -35,12 +32,9 @@ export async function generateMetadata({
   };
 }
 
-export default async function ArticlePage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const article = await getArticleBySlug(params.slug);
+export default async function ArticlePage({ params }) {
+  const { slug } = await params;
+  const article = await getArticleBySlug(slug);
 
   if (!article) {
     // Affiche la page 404 de Next.js
@@ -80,11 +74,11 @@ export default async function ArticlePage({
         {/* Image Principale (Image tag uniquement si vous avez un composant Image personnalisé) */}
         <div className="relative w-full h-96 mb-8 rounded-lg overflow-hidden shadow-xl">
           {/* Remplacer par le composant Image de Next.js si le chemin d'image est correct */}
-          <Image
-            src={article.imageUrl || "/images/default-anpir.jpg"}
+          <img
+            src={article.imageUrl || "/images/default-anpir.jpeg"}
             alt={article.title}
             className="w-full h-full object-cover"
-          ></Image>
+          ></img>
         </div>
 
         {/* Corps de l'article (Utilisation de dangerouslySetInnerHTML pour le contenu HTML du CMS) */}

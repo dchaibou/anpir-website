@@ -73,7 +73,7 @@ export default function ExecutiveBureau() {
       </div>
       <p className="text-center text-sm text-gray-500 mt-10">
         Le Bureau est élu pour un mandat de [Durée] ans conformément aux statuts
-        de l'ANPIR.
+        de l&rsquo;ANPIR.
       </p>
     </section>
   );

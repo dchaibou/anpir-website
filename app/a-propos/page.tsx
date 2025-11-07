@@ -18,8 +18,8 @@ export default function AboutPage() {
             Qui sommes-nous ?
           </h1>
           <p className="mt-4 text-xl text-gray-600">
-            L'Association Nigérienne des Professionnels de l'Imagerie Médicale
-            et de la Radiothérapie.
+            l&rsquo;Association Nigérienne des Professionnels de
+            l&rsquo;Imagerie Médicale et de la Radiothérapie.
           </p>
         </div>
 
@@ -32,16 +32,16 @@ export default function AboutPage() {
               </h2>
               <p className="text-gray-700 mb-4">
                 Fondée en <b>[Année de Fondation]</b> par un groupe de
-                praticiens pionniers, l'ANPIR est née de la volonté d'unifier la
-                voix des professionnels de l'imagerie médicale et de la
-                radiothérapie au Niger. Notre création a été un catalyseur pour
-                l'adoption des meilleures pratiques et l'acquisition
-                d'équipements de pointe, notamment l'inauguration du premier
-                centre de radiothérapie du pays.
+                praticiens pionniers, l&rsquo;ANPIR est née de la volonté
+                d&rsquo;unifier la voix des professionnels de l&rsquo;imagerie
+                médicale et de la radiothérapie au Niger. Notre création a été
+                un catalyseur pour l&rsquo;adoption des meilleures pratiques et
+                l&rsquo;acquisition d&rsquo;équipements de pointe, notamment
+                l&rsquo;inauguration du premier centre de radiothérapie du pays.
               </p>
               <p className="text-gray-700">
-                L'Association est officiellement reconnue par le Ministère de la
-                Santé Publique et de la Population.
+                l&rsquo;Association est officiellement reconnue par le Ministère
+                de la Santé Publique et de la Population.
               </p>
             </div>
 
@@ -59,8 +59,8 @@ export default function AboutPage() {
                   scientifique.
                 </li>
                 <li>
-                  Participer à l'amélioration de la **qualité des soins** et des
-                  équipements.
+                  Participer à l&rsquo;amélioration de la **qualité des soins**
+                  et des équipements.
                 </li>
                 <li>
                   Établir des partenariats avec des organismes nationaux et
