@@ -13,8 +13,8 @@ export default function NotFound() {
         </h1>
 
         <p className="mt-4 text-xl text-gray-600">
-          Nous sommes désolés, l'adresse que vous avez demandée n'existe pas ou
-          a été déplacée.
+          Nous sommes désolés, l&apos;adresse que vous avez demandée
+          n&apos;existe pas ou a été déplacée.
         </p>
 
         <div className="mt-8 flex flex-col items-center space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
@@ -22,7 +22,7 @@ export default function NotFound() {
             href="/"
             className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition duration-150"
           >
-            Retourner à l'Accueil
+            Retourner à l&apos;Accueil
           </Link>
 
           <Link
@@ -34,7 +34,8 @@ export default function NotFound() {
         </div>
 
         <p className="mt-6 text-sm text-gray-500">
-          Si vous pensez qu'il s'agit d'une erreur, veuillez vérifier l'URL.
+          Si vous pensez qu&apos;il s&apos;agit d&apos;une erreur, veuillez
+          vérifier l&apos;URL.
         </p>
       </div>
     </div>

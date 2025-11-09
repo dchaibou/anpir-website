@@ -22,7 +22,7 @@ export default async function ActualitesPage() {
           </h1>
           <p className="mt-2 text-lg leading-8 text-gray-600">
             Les dernières nouvelles, les événements à venir et les communiqués
-            officiels de l'ANPIR.
+            officiels de l&#39;ANPIR.
           </p>
         </div>
 

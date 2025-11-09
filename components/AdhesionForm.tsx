@@ -42,9 +42,9 @@ export default function AdhesionForm() {
           Félicitations !
         </h3>
         <p className="text-lg text-green-700">
-          Votre demande d'adhésion à l'ANPIR a été envoyée avec succès. Nous
-          examinerons votre candidature et vous contacterons sous peu pour le
-          paiement de la cotisation. Merci de votre engagement !
+          Votre demande d&apos;adhésion à l&apos;ANPIR a été envoyée avec
+          succès. Nous examinerons votre candidature et vous contacterons sous
+          peu pour le paiement de la cotisation. Merci de votre engagement !
         </p>
       </div>
     );
@@ -154,7 +154,7 @@ export default function AdhesionForm() {
           htmlFor="workplace"
           className="block text-sm font-medium leading-6 text-gray-900"
         >
-          Lieu d'exercice principal (Hôpital, Centre, Ville)
+          Lieu d&apos;exercice principal (Hôpital, Centre, Ville)
         </label>
         <input
           type="text"
@@ -170,7 +170,7 @@ export default function AdhesionForm() {
           htmlFor="motivation"
           className="block text-sm font-medium leading-6 text-gray-900"
         >
-          Motivation pour rejoindre l'ANPIR (Optionnel)
+          Motivation pour rejoindre l&apos;ANPIR (Optionnel)
         </label>
         <textarea
           id="motivation"
@@ -191,8 +191,8 @@ export default function AdhesionForm() {
       </button>
 
       <p className="text-center text-xs text-gray-500 mt-4">
-        * En soumettant ce formulaire, vous acceptez d'être contacté(e) par le
-        Bureau Exécutif de l'ANPIR.
+        * En soumettant ce formulaire, vous acceptez d&apos;être contacté(e) par
+        le Bureau Exécutif de l&apos;ANPIR.
       </p>
     </form>
   );

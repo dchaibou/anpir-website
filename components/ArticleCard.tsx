@@ -55,7 +55,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
             href={`/actualites/${article.slug}`}
             className="text-sm font-semibold text-blue-600 hover:text-blue-800 flex items-center"
           >
-            Lire l'article
+            Lire l&apos;article
             <span className="ml-1 text-lg">→</span>
           </Link>
         </div>

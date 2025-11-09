@@ -14,7 +14,11 @@ export async function generateStaticParams() {
 }
 
 // Fonction pour générer des métadonnées dynamiques
-export async function generateMetadata({ params }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
   const { slug } = await params;
   const article = await getArticleBySlug(slug);
 
@@ -32,7 +36,11 @@ export async function generateMetadata({ params }): Promise<Metadata> {
   };
 }
 
-export default async function ArticlePage({ params }) {
+export default async function ArticlePage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const { slug } = await params;
   const article = await getArticleBySlug(slug);
 
@@ -74,11 +82,12 @@ export default async function ArticlePage({ params }) {
         {/* Image Principale (Image tag uniquement si vous avez un composant Image personnalisé) */}
         <div className="relative w-full h-96 mb-8 rounded-lg overflow-hidden shadow-xl">
           {/* Remplacer par le composant Image de Next.js si le chemin d'image est correct */}
-          <img
+          <Image
             src={article.imageUrl || "/images/default-anpir.jpeg"}
             alt={article.title}
+            fill
             className="w-full h-full object-cover"
-          ></img>
+          />
         </div>
 
         {/* Corps de l'article (Utilisation de dangerouslySetInnerHTML pour le contenu HTML du CMS) */}

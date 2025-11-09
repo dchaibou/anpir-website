@@ -29,23 +29,23 @@ export default function Hero() {
           </p>
 
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
-            Association Nigérienne des Professionnels de l'Imagerie Médicale et
-            de la Radiothérapie
+            Association Nigérienne des Professionnels de l&apos;Imagerie
+            Médicale et de la Radiothérapie
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            L'ANPIR est la plateforme d'excellence pour la promotion, la
-            formation et l'encadrement des professionnels de l'imagerie et de la
-            radiothérapie au Niger.
+            L&apos;ANPIR est la plateforme d&apos;excellence pour la promotion,
+            la formation et l&apos;encadrement des professionnels de
+            l&apos;imagerie et de la radiothérapie au Niger.
           </p>
 
           {/* Boutons d'Action (Call-to-Action) */}
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
               href="/adhesion"
-              className="rounded-md bg-blue-600 px-4 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition duration-150"
+              className="rounded-md bg-blue-600 px-4 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition duration-150"
             >
-              Adhérer à l'Association
+              Adhérer à l&apos;Association
             </Link>
             <Link
               href="/actualites"

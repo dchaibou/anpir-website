@@ -1,6 +1,6 @@
 import ContactForm from "@/components/ContactForm";
 import { Metadata } from "next";
-import { MapPin, Mail, Phone } from "lucide-react"; // Utilisation d'icônes pour un look moderne
+import { MapPin, Mail, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
   title:
@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  // Informations de contact réelles (à mettre à jour par l'ANPIR)
+  // Informations de contact
   const contactInfo = {
-    address: "Bâtiment du CHU Sani Abatcha, Rue de l'Hôpital, Niamey, Niger",
-    email: "contact@anpir-niger.org",
-    phone: "+227 96 XX XX XX", // Numéro de contact de l'ANPIR
+    address: "Quartier Bobiel, Arrondissement Communal Niamey I",
+    email: "contact@anpir.ne",
+    phone: "+227 90 34 50 15",
   };
 
   return (
@@ -27,7 +27,7 @@ export default function ContactPage() {
           </h1>
           <p className="mt-4 text-xl text-gray-600">
             Nous sommes à votre disposition pour toute question relative à
-            l'adhésion, aux événements ou aux partenariats.
+            l&#39;adhésion, aux événements ou aux partenariats.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function ContactPage() {
 
             {/* Adresse */}
             <div className="flex items-start space-x-4">
-              <MapPin className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
+              <MapPin className="h-6 w-6 text-blue-600 shrink-0 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">
                   Siège Social
@@ -52,7 +52,7 @@ export default function ContactPage() {
 
             {/* Email */}
             <div className="flex items-start space-x-4">
-              <Mail className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
+              <Mail className="h-6 w-6 text-blue-600 shrink-0 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">
                   Adresse Électronique
@@ -67,7 +67,7 @@ export default function ContactPage() {
 
             {/* Téléphone */}
             <div className="flex items-start space-x-4">
-              <Phone className="h-6 w-6 text-blue-600 flex-shrink-0 mt-1" />
+              <Phone className="h-6 w-6 text-blue-600 shrink-0 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">
                   Téléphone
@@ -82,8 +82,8 @@ export default function ContactPage() {
             {/* Simulation de carte/localisation */}
             <div className="pt-4 border-t">
               <p className="text-sm text-gray-500">
-                Localisation approximative à Niamey (Intégration future d'une
-                carte Google Maps ou OpenStreetMap).
+                Localisation approximative à Niamey (Intégration future
+                d&#39;une carte Google Maps ou OpenStreetMap).
               </p>
               <div className="mt-2 w-full h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
                 [Placeholder Carte de Niamey]

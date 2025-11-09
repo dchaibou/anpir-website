@@ -22,7 +22,7 @@ export default async function EvenementsPage() {
           </h1>
           <p className="mt-4 text-xl text-gray-600">
             Retrouvez tous les rendez-vous scientifiques et professionnels de
-            l'ANPIR.
+            l&apos;ANPIR.
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default async function EvenementsPage() {
             </div>
           ) : (
             <div className="bg-white p-6 rounded-lg text-center text-gray-500">
-              Aucun événement n'est prévu dans l'immédiat. Revenez bientôt !
+              Aucun événement n&apos;est prévu dans l&apos;immédiat. Revenez bientôt !
             </div>
           )}
         </section>
@@ -59,13 +59,13 @@ export default async function EvenementsPage() {
             </div>
           ) : (
             <div className="bg-white p-6 rounded-lg text-center text-gray-500">
-              Aucun événement historique n'est enregistré.
+              Aucun événement historique n&apos;est enregistré.
             </div>
           )}
 
           <p className="mt-8 text-center text-gray-600">
             Pour les comptes rendus et présentations des événements passés,
-            veuillez consulter l'**Espace Membre**.
+            veuillez consulter l&apos;<b>Espace Membre</b>.
           </p>
         </section>
       </div>
