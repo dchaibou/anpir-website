@@ -17,3 +17,6 @@ COPY --from=build /app/public ./public
 EXPOSE 3000
 USER node
 CMD ["npm", "start"]
+
+# docker build -t anpir-website .
+# docker run -p 3000:3000 anpir-website

@@ -1,4 +1,4 @@
-import { Article } from './types';
+import { Article, Event } from './types';
 
 // **********************************************
 // DONNÉES DE SIMULATION
