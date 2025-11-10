@@ -6,7 +6,6 @@ export default function Footer() {
   return (
     <footer className="mt-auto bg-gray-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Liens rapides / Informations */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-700 pb-6 mb-6">
           <div>
             <h4 className="font-semibold text-lg mb-3 text-blue-400">ANPIR</h4>
@@ -55,19 +54,20 @@ export default function Footer() {
               Contact
             </h4>
             <p className="text-sm text-gray-400">
-              Siège Social : [Adresse à Niamey]
+              Siège Social : Quartier Bobiel, Arrondissement Communal Niamey I
               <br />
-              Email : contact@anpir-niger.org
+              Email : contact@anpir.ne
               <br />
-              Tél : [+227...]
+              Tél : +227 90 34 50 15
             </p>
           </div>
         </div>
 
-        {/* Copyright */}
         <div className="text-center text-sm text-gray-500">
           &copy; {currentYear} ANPIR. Tous droits réservés.<br></br>
-          <span>Powered by <a href="https://taramtech.com">Taram Tech</a> </span>
+          <span>
+            Powered by <Link href="https://taramtech.com">Taram Tech</Link>
+          </span>
         </div>
       </div>
     </footer>

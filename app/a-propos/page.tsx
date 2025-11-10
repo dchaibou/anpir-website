@@ -12,59 +12,63 @@ export default function AboutPage() {
   return (
     <div className="bg-white py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        {/* Section Titre et Introduction */}
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-4xl font-extrabold tracking-tight text-blue-800 sm:text-5xl">
             Qui sommes-nous ?
           </h1>
           <p className="mt-4 text-xl text-gray-600">
-            l&rsquo;Association Nigérienne des Professionnels de
-            l&rsquo;Imagerie Médicale et de la Radiothérapie.
+            L&#39;Association Nigérienne des Professionnels de l&#39;Imagerie
+            Médicale et de la Radiothérapie.
           </p>
         </div>
 
-        {/* Section Historique et Missions */}
         <section className="mt-12 max-w-4xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div>
               <h2 className="text-3xl font-semibold text-gray-900 mb-4 border-b pb-2">
-                Notre Histoire
+                Notre Histoire et Statut
               </h2>
               <p className="text-gray-700 mb-4">
-                Fondée en <b>[Année de Fondation]</b> par un groupe de
-                praticiens pionniers, l&rsquo;ANPIR est née de la volonté
-                d&rsquo;unifier la voix des professionnels de l&rsquo;imagerie
-                médicale et de la radiothérapie au Niger. Notre création a été
-                un catalyseur pour l&rsquo;adoption des meilleures pratiques et
-                l&rsquo;acquisition d&rsquo;équipements de pointe, notamment
-                l&rsquo;inauguration du premier centre de radiothérapie du pays.
+                L&#39;ANPIR a été officiellement <b>créée en 2016 à Niamey</b>.
+                C&#39;est une organisation
+                <b> apolitique, non confessionnelle et à but non lucratif</b>.
               </p>
               <p className="text-gray-700">
-                l&rsquo;Association est officiellement reconnue par le Ministère
-                de la Santé Publique et de la Population.
+                Elle est née de la volonté d&#39;unifier la voix des
+                professionnels de l&#39;imagerie médicale et de la
+                radiothérapie, et regroupe les techniciens supérieurs,
+                ingénieurs et spécialistes du domaine.
+              </p>
+              <p className="text-gray-700 mt-4">
+                Sa mission est de <b>rassembler, représenter et défendre</b> les
+                professionnels pour l&#39;amélioration des soins de santé au
+                Niger.
               </p>
             </div>
 
             <div>
               <h2 className="text-3xl font-semibold text-gray-900 mb-4 border-b pb-2">
-                Nos Objectifs
+                Nos Objectifs Statutaires
               </h2>
               <ul className="space-y-3 text-gray-700 list-disc list-inside ml-4">
                 <li>
-                  Défendre les **intérêts moraux et professionnels** de ses
-                  membres.
+                  Défendre l&#39;<b>éthique et la déontologie</b> de la
+                  profession.
                 </li>
                 <li>
-                  Promouvoir la **formation continue** et la recherche
-                  scientifique.
+                  <b>Représenter la profession</b> auprès des autorités et des
+                  partenaires.
                 </li>
                 <li>
-                  Participer à l&rsquo;amélioration de la **qualité des soins**
-                  et des équipements.
+                  Encourager la <b>formation continue</b> des membres et
+                  l&#39;encadrement des stagiaires.
                 </li>
                 <li>
-                  Établir des partenariats avec des organismes nationaux et
-                  internationaux.
+                  Promouvoir la <b>coopération</b> nationale et internationale.
+                </li>
+                <li>
+                  <b>Informer le public</b> sur le rôle de la profession dans la
+                  santé publique.
                 </li>
               </ul>
               <p className="mt-4 text-sm text-blue-600">
@@ -73,14 +77,13 @@ export default function AboutPage() {
                   target="_blank"
                   className="hover:underline"
                 >
-                  Consulter nos Statuts et Règlements Intérieurs (PDF)
+                  Consulter nos Statuts et Règlement Intérieur (PDF)
                 </Link>
               </p>
             </div>
           </div>
         </section>
 
-        {/* Section Bureau Exécutif */}
         <ExecutiveBureau />
       </div>
     </div>

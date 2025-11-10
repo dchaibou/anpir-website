@@ -10,7 +10,6 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  // Informations de contact
   const contactInfo = {
     address: "Quartier Bobiel, Arrondissement Communal Niamey I",
     email: "contact@anpir.ne",

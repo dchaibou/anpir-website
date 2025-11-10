@@ -16,7 +16,6 @@ export default function ContactForm() {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      // ⚠️ Future API Route pour l'envoi d'e-mail: /api/contact
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
@@ -68,7 +67,6 @@ export default function ContactForm() {
         </div>
       )}
       <form onSubmit={handleSubmit} className="space-y-4">
-        {/* Nom */}
         <div>
           <label
             htmlFor="name"
@@ -85,7 +83,6 @@ export default function ContactForm() {
           />
         </div>
 
-        {/* Email */}
         <div>
           <label
             htmlFor="email"
@@ -102,7 +99,6 @@ export default function ContactForm() {
           />
         </div>
 
-        {/* Objet */}
         <div>
           <label
             htmlFor="subject"
@@ -118,7 +114,6 @@ export default function ContactForm() {
           />
         </div>
 
-        {/* Message */}
         <div>
           <label
             htmlFor="message"
@@ -135,11 +130,10 @@ export default function ContactForm() {
           />
         </div>
 
-        {/* Bouton */}
         <button
           type="submit"
           disabled={isSubmitting}
-          className="flex w-full justify-center rounded-md bg-blue-600 px-3 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 disabled:opacity-50 transition duration-150"
+          className="flex w-full justify-center rounded-md bg-blue-600 px-3 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 disabled:opacity-50 transition duration-150"
         >
           {isSubmitting ? "Envoi en cours..." : "Envoyer le Message"}
         </button>

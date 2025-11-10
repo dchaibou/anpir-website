@@ -1,38 +1,37 @@
 import Image from "next/image";
 
-// Données de simulation du Bureau Exécutif (à remplacer par les vraies données)
 const bureauMembers = [
   {
-    name: "Dr. Aïsha Diallo",
-    title: "Présidente",
-    specialty: "Médecin Radiologue, CHU Niamey",
-    photoUrl: "/images/aisha-diallo.jpg",
+    name: "Boubacar Seïni Harouna",
+    title: "Président",
+    specialty: "Docteur en IMR",
+    photoUrl: "/images/boubacar-seini-harouna.jpg",
     description:
-      "Visionnaire et leader, elle est la force motrice derrière l'expansion des services d'imagerie au Niger.",
+      "Leader du BEN, il assure la responsabilité morale de l'Association et la représente en toute circonstance conformément aux statuts.",
   },
   {
-    name: "Pr. Omar Bako",
+    name: "Nassirou Seyni Oumarou",
     title: "Vice-Président",
-    specialty: "Oncologue-Radiothérapeute",
-    photoUrl: "/images/omar-bako.jpg",
+    specialty: "T.S.R.",
+    photoUrl: "/images/nassirou-seyni-oumarou.jpg",
     description:
-      "Expert en radiothérapie, il assure la liaison avec les organismes internationaux (AIEA).",
+      "Coordonne les Sections régionales et assure le remplacement du Président en cas d'empêchement.",
   },
   {
-    name: "Mme. Zara Moussa",
+    name: "Mme Madou Aïssa Moussa",
     title: "Secrétaire Générale",
-    specialty: "Manipulatrice en Électroradiologie Médicale (MERM)",
-    photoUrl: "/images/zara-moussa.jpg",
+    specialty: "T.S.R.",
+    photoUrl: "/images/madou-aissa-moussa.jpg",
     description:
-      "Garant de l'organisation interne et de la coordination des réunions du bureau.",
+      "Garant de l'organisation interne, chargée des correspondances, de la rédaction des procès-verbaux et de l'archivage.",
   },
   {
-    name: "Dr. Ibrahim Sani",
-    title: "Trésorier",
-    specialty: "Physicien Médical",
-    photoUrl: "/images/ibrahim-sani.jpg",
+    name: "Alio Ibrahima",
+    title: "Trésorier Général",
+    specialty: "T.S.R.",
+    photoUrl: "/images/alio-ibrahima.jpg",
     description:
-      "Chargé des finances et du suivi des cotisations et des subventions.",
+      "Chargé de la gestion financière, du suivi des cotisations et de l'établissement des comptes de l'Association.",
   },
 ];
 
@@ -40,7 +39,7 @@ export default function ExecutiveBureau() {
   return (
     <section className="mt-16">
       <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-10 text-center">
-        Le Bureau Exécutif
+        Le Bureau Exécutif National (BEN)
       </h2>
       <div className="mx-auto max-w-7xl grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
         {bureauMembers.map((member) => (
@@ -49,7 +48,6 @@ export default function ExecutiveBureau() {
             className="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg border border-gray-100"
           >
             <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-blue-500">
-              {/* Placeholder pour la photo de profil */}
               <Image
                 src={member.photoUrl || "/images/default-profile.jpg"}
                 alt={`Photo de ${member.name}`}
@@ -72,8 +70,9 @@ export default function ExecutiveBureau() {
         ))}
       </div>
       <p className="text-center text-sm text-gray-500 mt-10">
-        Le Bureau est élu pour un mandat de [Durée] ans conformément aux statuts
-        de l&rsquo;ANPIR.
+        Le Bureau Exécutif est élu pour un mandat de{" "}
+        <b>trois (3) ans renouvelable une seule fois</b> conformément à
+        l&apos;Article 17 des statuts de l&apos;ANPIR.
       </p>
     </section>
   );
