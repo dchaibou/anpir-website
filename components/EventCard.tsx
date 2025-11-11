@@ -40,7 +40,7 @@ export default function EventCard({ event }: EventCardProps) {
       }`}
     >
       {/* Date Clé (Format J-M) */}
-      <div className="flex-shrink-0 text-center w-16">
+      <div className="shrink-0 text-center w-16">
         <div
           className={`text-3xl font-bold ${
             isPast ? "text-gray-400" : "text-blue-600"
@@ -100,12 +100,11 @@ export default function EventCard({ event }: EventCardProps) {
           className={`inline-block mt-3 px-4 py-2 text-sm font-semibold rounded-md transition duration-150 shadow-md 
             ${
               isPast
-                ? "bg-gray-300 text-gray-700 cursor-not-allowed"
+                ? "bg-gray-300 text-gray-700 cursor-not-allowed pointer-events-none"
                 : event.isRegistrationOpen
                 ? "bg-green-600 text-white hover:bg-green-700"
                 : "bg-blue-600 text-white hover:bg-blue-700"
             }`}
-          disabled={isPast}
         >
           {isPast
             ? "Voir les comptes rendus"
