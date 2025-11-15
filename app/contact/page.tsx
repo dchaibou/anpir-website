@@ -26,7 +26,7 @@ export default function ContactPage() {
           </h1>
           <p className="mt-4 text-xl text-gray-600">
             Nous sommes à votre disposition pour toute question relative à
-            l&#39;adhésion, aux événements ou aux partenariats.
+            l&apos;adhésion, aux événements ou aux partenariats.
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function ContactPage() {
             <div className="pt-4 border-t">
               <p className="text-sm text-gray-500">
                 Localisation approximative à Niamey (Intégration future
-                d&#39;une carte Google Maps ou OpenStreetMap).
+                d&apos;une carte Google Maps ou OpenStreetMap).
               </p>
               <div className="mt-2 w-full h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500">
                 [Placeholder Carte de Niamey]

@@ -31,7 +31,7 @@ export default function EspaceMembrePage() {
           Bienvenue, {user.name} !
         </h1>
         <p className="text-lg text-gray-600 mb-10">
-          Votre tableau de bord personnel de l&#39;ANPIR.
+          Votre tableau de bord personnel de l&apos;ANPIR.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

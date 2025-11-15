@@ -17,7 +17,7 @@ export default function AboutPage() {
             Qui sommes-nous ?
           </h1>
           <p className="mt-4 text-xl text-gray-600">
-            L&#39;Association Nigérienne des Professionnels de l&#39;Imagerie
+            L&apos;Association Nigérienne des Professionnels de l&apos;Imagerie
             Médicale et de la Radiothérapie.
           </p>
         </div>
@@ -29,19 +29,19 @@ export default function AboutPage() {
                 Notre Histoire et Statut
               </h2>
               <p className="text-gray-700 mb-4">
-                L&#39;ANPIR a été officiellement <b>créée en 2016 à Niamey</b>.
-                C&#39;est une organisation
+                L&apos;ANPIR a été officiellement <b>créée en 2016 à Niamey</b>.
+                C&apos;est une organisation
                 <b> apolitique, non confessionnelle et à but non lucratif</b>.
               </p>
               <p className="text-gray-700">
-                Elle est née de la volonté d&#39;unifier la voix des
-                professionnels de l&#39;imagerie médicale et de la
+                Elle est née de la volonté d&apos;unifier la voix des
+                professionnels de l&apos;imagerie médicale et de la
                 radiothérapie, et regroupe les techniciens supérieurs,
                 ingénieurs et spécialistes du domaine.
               </p>
               <p className="text-gray-700 mt-4">
                 Sa mission est de <b>rassembler, représenter et défendre</b> les
-                professionnels pour l&#39;amélioration des soins de santé au
+                professionnels pour l&apos;amélioration des soins de santé au
                 Niger.
               </p>
             </div>
@@ -52,7 +52,7 @@ export default function AboutPage() {
               </h2>
               <ul className="space-y-3 text-gray-700 list-disc list-inside ml-4">
                 <li>
-                  Défendre l&#39;<b>éthique et la déontologie</b> de la
+                  Défendre l&apos;<b>éthique et la déontologie</b> de la
                   profession.
                 </li>
                 <li>
@@ -61,7 +61,7 @@ export default function AboutPage() {
                 </li>
                 <li>
                   Encourager la <b>formation continue</b> des membres et
-                  l&#39;encadrement des stagiaires.
+                  l&apos;encadrement des stagiaires.
                 </li>
                 <li>
                   Promouvoir la <b>coopération</b> nationale et internationale.

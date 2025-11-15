@@ -25,8 +25,8 @@ export default function Hero() {
           </p>
 
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
-            Bienvenue sur le site officiel de l&#39;Association Nigérienne des
-            Professionnels d&#39;Imagerie Médicale et de la Radiothérapie
+            Bienvenue sur le site officiel de l&apos;Association Nigérienne des
+            Professionnels d&apos;Imagerie Médicale et de la Radiothérapie
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-gray-300">
@@ -42,7 +42,7 @@ export default function Hero() {
               href="/adhesion"
               className="rounded-md bg-blue-600 px-4 py-2.5 text-lg font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition duration-150"
             >
-              Adhérer à l&#39;Association
+              Adhérer à l&apos;Association
             </Link>
             <Link
               href="/actualites"
