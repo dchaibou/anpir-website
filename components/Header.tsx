@@ -12,7 +12,7 @@ const navItems = [
   { name: "L'Association", href: "/a-propos" },
   { name: "Actualités", href: "/actualites" },
   { name: "Événements & Formations", href: "/evenements" },
-  { name: "Adhésion", href: "/adhesion" },
+  // { name: "Adhésion", href: "/adhesion" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -32,7 +32,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="sticky top-0 z-50 bg-amber-300 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <Link
           href="/"
@@ -76,7 +76,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center space-x-3">
-          {isLoggedIn ? (
+          {/* {isLoggedIn ? (
             <button
               onClick={handleLogout}
               className="hidden md:block bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition duration-150 text-sm font-medium"
@@ -90,7 +90,7 @@ export default function Header() {
             >
               Espace Membre
             </Link>
-          )}
+          )} */}
 
           <button
             className="md:hidden text-gray-700 hover:text-blue-600 p-2 rounded-md"
@@ -125,7 +125,7 @@ export default function Header() {
 
           <hr className="my-2 border-gray-200" />
 
-          {isLoggedIn ? (
+          {/* {isLoggedIn ? (
             <>
               <Link
                 href="/espace-membre"
@@ -149,7 +149,7 @@ export default function Header() {
             >
               Espace Membre
             </Link>
-          )}
+          )} */}
         </nav>
       </div>
     </header>
