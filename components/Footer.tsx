@@ -16,11 +16,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/statuts" className="hover:text-white">
-                  Statuts
-                </Link>
-              </li>
-              <li>
                 <Link href="/partenaires" className="hover:text-white">
                   Partenaires
                 </Link>
@@ -42,23 +37,17 @@ export default function Footer() {
                   Agenda
                 </Link>
               </li>
-              <li>
-                <Link href="/espace-membre" className="hover:text-white">
-                  Espace Membre
-                </Link>
-              </li>
             </ul>
           </div>
           <div className="col-span-2 md:col-span-2">
-            <h4 className="font-semibold text-lg mb-3 text-red-400">
-              Contact
-            </h4>
+            <h4 className="font-semibold text-lg mb-3 text-red-400">Contact</h4>
             <p className="text-sm text-gray-400">
-              Siège Social : Quartier Bobiel, Arrondissement Communal Niamey I
+              <b>Siège Social :</b> Quartier Bobiel, Arrondissement Communal
+              Niamey I
               <br />
-              Email : contact@anpir.ne
+              <b>Email :</b> contact@anpir.ne
               <br />
-              Tél : +227 90 34 50 15
+              <b>Tél :</b> +227 90 34 50 15
             </p>
           </div>
         </div>

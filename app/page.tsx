@@ -16,28 +16,27 @@ export default function HomePage() {
             pour le développement de l&apos;Imagerie Médicale et de la
             Radiothérapie au Niger.
           </p>
-
-          <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 max-w-6xl mx-auto">
             {[
               {
+                icon: "⚖️",
                 title: "Éthique et Déontologie",
                 desc: "Contribuer à maintenir les principes moraux de la profession en accord avec le code de l'éthique et la déontologie.",
-                icon: "⚖️",
               },
               {
+                icon: "🤝",
                 title: "Défense et Représentation",
                 desc: "Protéger et servir les intérêts des membres et représenter la profession auprès des pouvoirs publics et organismes privés.",
-                icon: "🤝",
               },
               {
+                icon: "📚",
                 title: "Formation et Encadrement",
                 desc: "Encourager la formation continue des membres et participer activement à l'encadrement des stagiaires.",
-                icon: "📚",
               },
               {
+                icon: "📢",
                 title: "Information et Image",
                 desc: "Aider le public à connaitre la profession en utilisant les divers moyens d'information et protéger les titres conférés par les diplômes.",
-                icon: "📢",
               },
             ].map((item) => (
               <div

@@ -1,9 +1,10 @@
 import Link from "next/link";
+import React from "react"; // S'assurer que React est importé
 
 export default function Hero() {
   return (
     <div className="relative isolate overflow-hidden bg-neutral-900 py-24 sm:py-32">
-      <div className="absolute inset-0 -z-10 h-full w-full opacity-30">
+      <div className="absolute inset-0 -z-10 h-full w-full">
         <div
           className="bg-cover bg-center h-full w-full"
           style={{
@@ -12,7 +13,7 @@ export default function Hero() {
           }}
         >
           <div
-            className="absolute inset-0 bg-gray-900 mix-blend-multiply"
+            className="absolute inset-0 bg-gray-900 opacity-70"
             aria-hidden="true"
           />
         </div>
