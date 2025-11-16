@@ -40,7 +40,7 @@ export default function LoginForm() {
         );
       }
     } catch (err) {
-      setError("Erreur réseau ou du serveur.");
+      setError("Erreur réseau ou du serveur : " + err);
     } finally {
       setIsSubmitting(false);
     }
@@ -52,10 +52,10 @@ export default function LoginForm() {
       className="space-y-6 bg-white p-8 rounded-xl shadow-lg border border-gray-200 w-full max-w-md mx-auto"
     >
       <h2 className="text-3xl font-bold text-center text-gray-900">
-        Connexion Membres
+        Connexion Administrateur
       </h2>
       <p className="text-center text-gray-500">
-        Utilisez votre email et mot de passe ANPIR.
+        Utilisez votre email et mot de passe.
       </p>
 
       {error && (
@@ -81,7 +81,7 @@ export default function LoginForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm py-2.5 px-3 focus:border-blue-500 focus:ring-blue-500"
+          className="mt-1 block w-full rounded-md text-black border-gray-300 shadow-sm py-2.5 px-3 focus:border-red-500 focus:ring-red-500"
         />
       </div>
 
@@ -99,7 +99,7 @@ export default function LoginForm() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm py-2.5 px-3 focus:border-blue-500 focus:ring-blue-500"
+          className="mt-1 block w-full rounded-md text-black border-gray-300 shadow-sm py-2.5 px-3 focus:border-red-500 focus:ring-red-500"
         />
       </div>
 
@@ -107,19 +107,19 @@ export default function LoginForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full flex justify-center py-2.5 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50"
+        className="w-full flex justify-center py-2.5 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 disabled:opacity-50"
       >
         {isSubmitting ? "Connexion en cours..." : "Se Connecter"}
       </button>
 
-      <p className="text-center text-sm text-gray-500">
+      {/* <p className="text-center text-sm text-gray-500">
         <Link
           href="/adhesion"
-          className="font-medium text-blue-600 hover:text-blue-500"
+          className="font-medium text-red-600 hover:text-red-500"
         >
           Pas encore membre ? Adhérez ici
         </Link>
-      </p>
+      </p> */}
     </form>
   );
 }

@@ -13,7 +13,7 @@ export default function AboutPage() {
     <div className="bg-white py-12 sm:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="text-4xl font-extrabold tracking-tight text-blue-800 sm:text-5xl">
+          <h1 className="text-4xl font-extrabold tracking-tight text-red-600 sm:text-5xl">
             Qui sommes-nous ?
           </h1>
           <p className="mt-4 text-xl text-gray-600">
@@ -71,7 +71,7 @@ export default function AboutPage() {
                   santé publique.
                 </li>
               </ul>
-              <p className="mt-4 text-sm text-blue-600">
+              <p className="mt-4 text-sm text-red-600">
                 <Link
                   href="/documents/statuts-anpir.pdf"
                   target="_blank"

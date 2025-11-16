@@ -16,7 +16,6 @@ export default function ArticleCard({ article }: ArticleCardProps) {
 
   return (
     <article className="flex flex-col rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden bg-white border border-gray-100">
-      {/* Image de l'article */}
       <div className="relative w-full h-48">
         <Image
           src={article.imageUrl || "/images/default-anpir.jpg"}
@@ -29,9 +28,8 @@ export default function ArticleCard({ article }: ArticleCardProps) {
       </div>
 
       <div className="flex-1 p-6 flex flex-col justify-between">
-        {/* Catégorie et Date */}
         <div className="flex items-center justify-between text-sm mb-2">
-          <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-0.5 text-xs font-medium text-blue-800">
+          <span className="inline-flex items-center rounded-full bg-red-100 px-3 py-0.5 text-xs font-medium text-red-700">
             {article.category}
           </span>
           <time dateTime={article.date} className="text-gray-500">
@@ -39,9 +37,8 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           </time>
         </div>
 
-        {/* Titre et Résumé */}
         <div>
-          <h3 className="text-xl font-semibold text-gray-900 leading-snug hover:text-blue-600 transition duration-150">
+          <h3 className="text-xl font-semibold text-gray-900 leading-snug hover:text-red-400 transition duration-150">
             <Link href={`/actualites/${article.slug}`}>{article.title}</Link>
           </h3>
           <p className="mt-3 text-base text-gray-500 line-clamp-3">
@@ -49,11 +46,10 @@ export default function ArticleCard({ article }: ArticleCardProps) {
           </p>
         </div>
 
-        {/* Lien de lecture */}
         <div className="mt-4">
           <Link
             href={`/actualites/${article.slug}`}
-            className="text-sm font-semibold text-blue-600 hover:text-blue-800 flex items-center"
+            className="text-sm font-semibold text-red-400 hover:text-red-600 flex items-center"
           >
             Lire l&apos;article
             <span className="ml-1 text-lg">→</span>

@@ -47,7 +47,7 @@ export default function ExecutiveBureau() {
             key={member.name}
             className="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg border border-gray-100"
           >
-            <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-blue-500">
+            <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4 border-4 border-red-500">
               <Image
                 src={member.photoUrl || "/images/default-profile.jpg"}
                 alt={`Photo de ${member.name}`}
@@ -59,7 +59,7 @@ export default function ExecutiveBureau() {
             <h3 className="text-xl font-semibold text-gray-900">
               {member.name}
             </h3>
-            <p className="text-sm font-medium text-blue-600 uppercase mt-1">
+            <p className="text-sm font-medium text-red-600 uppercase mt-1">
               {member.title}
             </p>
             <p className="text-gray-500 text-sm italic mt-1">

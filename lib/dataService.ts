@@ -92,6 +92,16 @@ export async function getAllArticleSlugs() {
 // **********************************************
 const DUMMY_EVENTS: Event[] = [
   {
+    id: 100,
+    title: 'Test d\'évènement anterieur',
+    location: 'Palais des Congrès, Niamey',
+    startDate: '2025-03-15',
+    endDate: '2025-03-15',
+    isRegistrationOpen: true,
+    type: 'Congrès',
+    link: '/evenements/cnrim-2025',
+  },
+  {
     id: 101,
     title: '5ème Congrès National de Radiologie et d’Imagerie Médicale (CNRIM)',
     location: 'Palais des Congrès, Niamey',

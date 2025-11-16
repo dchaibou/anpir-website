@@ -61,7 +61,7 @@ export default async function ArticlePage({
         {/* Lien de retour */}
         <Link
           href="/actualites"
-          className="text-blue-600 hover:text-blue-800 transition duration-150 mb-6 inline-flex items-center"
+          className="text-red-400 hover:text-red-700 transition duration-150 mb-6 inline-flex items-center"
         >
           <span className="mr-1 text-lg">←</span> Retour aux actualités
         </Link>
@@ -73,7 +73,7 @@ export default async function ArticlePage({
           </h1>
           <div className="flex items-center space-x-4 text-gray-500 text-sm">
             <time dateTime={article.date}>{formattedDate}</time>
-            <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-0.5 text-xs font-medium text-blue-800">
+            <span className="inline-flex items-center rounded-full bg-red-100 px-3 py-0.5 text-xs font-medium text-red-700">
               {article.category}
             </span>
           </div>

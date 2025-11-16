@@ -68,7 +68,7 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-gray-700 hover:text-blue-600 transition duration-150 font-medium"
+              className="text-gray-700 hover:text-red-600 transition duration-150 font-medium"
             >
               {item.name}
             </Link>
@@ -76,7 +76,7 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center space-x-3">
-          {/* {isLoggedIn ? (
+          {isLoggedIn ? (
             <button
               onClick={handleLogout}
               className="hidden md:block bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition duration-150 text-sm font-medium"
@@ -86,14 +86,14 @@ export default function Header() {
           ) : (
             <Link
               href="/login"
-              className="hidden md:block bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition duration-150 font-medium text-sm"
+              className="hidden md:block bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition duration-150 font-medium text-sm"
             >
-              Espace Membre
+              Se connecter
             </Link>
-          )} */}
+          )}
 
           <button
-            className="md:hidden text-gray-700 hover:text-blue-600 p-2 rounded-md"
+            className="md:hidden text-gray-700 hover:text-red-600 p-2 rounded-md"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -117,7 +117,7 @@ export default function Header() {
               key={item.name}
               href={item.href}
               onClick={handleLinkClick}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition duration-150"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-red-50 hover:text-red-600 transition duration-150"
             >
               {item.name}
             </Link>
@@ -125,12 +125,12 @@ export default function Header() {
 
           <hr className="my-2 border-gray-200" />
 
-          {/* {isLoggedIn ? (
+          {isLoggedIn ? (
             <>
               <Link
                 href="/espace-membre"
                 onClick={handleLinkClick}
-                className="block w-full text-center px-3 py-2 rounded-md font-medium text-white bg-blue-600 hover:bg-blue-700 transition duration-150"
+                className="block w-full text-center px-3 py-2 rounded-md font-medium text-white bg-red-600 hover:bg-red-700 transition duration-150"
               >
                 <User className="inline h-4 w-4 mr-1" /> Tableau de Bord
               </Link>
@@ -145,11 +145,11 @@ export default function Header() {
             <Link
               href="/login"
               onClick={handleLinkClick}
-              className="block w-full text-center px-3 py-2 rounded-md font-medium text-white bg-green-600 hover:bg-green-700 transition duration-150"
+              className="block w-full text-center px-3 py-2 rounded-md font-medium text-white bg-red-600 hover:bg-red-700 transition duration-150"
             >
-              Espace Membre
+              Se connecter
             </Link>
-          )} */}
+          )}
         </nav>
       </div>
     </header>

@@ -17,7 +17,7 @@ export default async function EvenementsPage() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Titre principal */}
         <div className="mx-auto max-w-2xl text-center mb-12">
-          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+          <h1 className="text-4xl font-extrabold tracking-tight text-red-600 sm:text-5xl">
             Agenda Événements & Formations
           </h1>
           <p className="mt-4 text-xl text-gray-600">
@@ -28,7 +28,7 @@ export default async function EvenementsPage() {
 
         {/* --- Section Événements à Venir --- */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-blue-800 mb-8 border-b pb-2">
+          <h2 className="text-3xl font-bold text-red-500 mb-8 border-b pb-2">
             Prochains Événements ({upcoming.length})
           </h2>
 
@@ -40,7 +40,8 @@ export default async function EvenementsPage() {
             </div>
           ) : (
             <div className="bg-white p-6 rounded-lg text-center text-gray-500">
-              Aucun événement n&apos;est prévu dans l&apos;immédiat. Revenez bientôt !
+              Aucun événement n&apos;est prévu dans l&apos;immédiat. Revenez
+              bientôt !
             </div>
           )}
         </section>
@@ -62,11 +63,6 @@ export default async function EvenementsPage() {
               Aucun événement historique n&apos;est enregistré.
             </div>
           )}
-
-          <p className="mt-8 text-center text-gray-600">
-            Pour les comptes rendus et présentations des événements passés,
-            veuillez consulter l&apos;<b>Espace Membre</b>.
-          </p>
         </section>
       </div>
     </div>

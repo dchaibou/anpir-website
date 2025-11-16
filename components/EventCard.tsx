@@ -36,14 +36,14 @@ export default function EventCard({ event }: EventCardProps) {
       className={`p-5 rounded-xl shadow-lg transition duration-300 flex space-x-4 ${
         isPast
           ? "bg-gray-50 opacity-80"
-          : "bg-white hover:shadow-xl border border-blue-100"
+          : "bg-white hover:shadow-xl border border-red-100"
       }`}
     >
       {/* Date Clé (Format J-M) */}
       <div className="shrink-0 text-center w-16">
         <div
           className={`text-3xl font-bold ${
-            isPast ? "text-gray-400" : "text-blue-600"
+            isPast ? "text-gray-400" : "text-red-500"
           }`}
         >
           {new Date(event.startDate).toLocaleDateString("fr-FR", {
@@ -52,7 +52,7 @@ export default function EventCard({ event }: EventCardProps) {
         </div>
         <div
           className={`text-sm uppercase ${
-            isPast ? "text-gray-500" : "text-blue-500"
+            isPast ? "text-gray-500" : "text-red-500"
           }`}
         >
           {new Date(event.startDate).toLocaleDateString("fr-FR", {
@@ -75,19 +75,15 @@ export default function EventCard({ event }: EventCardProps) {
         {/* Métadonnées */}
         <div className="flex flex-col sm:flex-row sm:items-center space-y-1 sm:space-y-0 sm:space-x-4 text-sm text-gray-500 mb-3">
           <span className="flex items-center space-x-1">
-            <MapPin className="h-4 w-4 text-blue-400" />
+            <MapPin className="h-4 w-4 text-red-400" />
             <span>{event.location}</span>
           </span>
           <span className="flex items-center space-x-1">
-            <Calendar className="h-4 w-4 text-blue-400" />
+            <Calendar className="h-4 w-4 text-red-400" />
             <span>{formatDates(event.startDate, event.endDate)}</span>
           </span>
           <span
-            className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium ${
-              event.type === "Congrès"
-                ? "bg-purple-100 text-purple-800"
-                : "bg-indigo-100 text-indigo-800"
-            }`}
+            className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-red-100 text-red-800`}
           >
             {event.type}
           </span>
@@ -100,10 +96,8 @@ export default function EventCard({ event }: EventCardProps) {
           className={`inline-block mt-3 px-4 py-2 text-sm font-semibold rounded-md transition duration-150 shadow-md 
             ${
               isPast
-                ? "bg-gray-300 text-gray-700 cursor-not-allowed pointer-events-none"
-                : event.isRegistrationOpen
-                ? "bg-green-600 text-white hover:bg-green-700"
-                : "bg-blue-600 text-white hover:bg-blue-700"
+                ? "bg-gray-300 text-gray-900 cursor-not-allowed pointer-events-none"
+                : "bg-red-400 text-white hover:bg-red-700"
             }`}
         >
           {isPast

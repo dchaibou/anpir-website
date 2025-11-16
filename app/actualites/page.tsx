@@ -17,7 +17,7 @@ export default async function ActualitesPage() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Titre de la page */}
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <h1 className="text-3xl font-extrabold tracking-tight text-red-600 sm:text-4xl">
             Actualités et Ressources
           </h1>
           <p className="mt-2 text-lg leading-8 text-gray-600">

@@ -21,7 +21,7 @@ export default function ContactPage() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Titre */}
         <div className="mx-auto max-w-2xl text-center mb-12">
-          <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+          <h1 className="text-4xl font-extrabold tracking-tight text-red-600 sm:text-5xl">
             Contactez-nous
           </h1>
           <p className="mt-4 text-xl text-gray-600">
@@ -34,13 +34,13 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Colonne des Informations de Contact */}
           <div className="lg:col-span-1 space-y-8">
-            <h2 className="text-2xl font-bold text-blue-800">
+            <h2 className="text-2xl font-bold text-red-600">
               Nos Coordonnées
             </h2>
 
             {/* Adresse */}
             <div className="flex items-start space-x-4">
-              <MapPin className="h-6 w-6 text-blue-600 shrink-0 mt-1" />
+              <MapPin className="h-6 w-6 text-red-500 shrink-0 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">
                   Siège Social
@@ -51,12 +51,12 @@ export default function ContactPage() {
 
             {/* Email */}
             <div className="flex items-start space-x-4">
-              <Mail className="h-6 w-6 text-blue-600 shrink-0 mt-1" />
+              <Mail className="h-6 w-6 text-red-500 shrink-0 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">
                   Adresse Électronique
                 </h3>
-                <p className="text-blue-600 hover:text-blue-700">
+                <p className="text-red-500 hover:text-red-600">
                   <a href={`mailto:${contactInfo.email}`}>
                     {contactInfo.email}
                   </a>
@@ -66,7 +66,7 @@ export default function ContactPage() {
 
             {/* Téléphone */}
             <div className="flex items-start space-x-4">
-              <Phone className="h-6 w-6 text-blue-600 shrink-0 mt-1" />
+              <Phone className="h-6 w-6 text-red-500 shrink-0 mt-1" />
               <div>
                 <h3 className="text-lg font-semibold text-gray-900">
                   Téléphone
